@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import Bolts
+import VerifyIosSdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.setApplicationId("PARSE-APPLICATION-KEY", clientKey: "PARSE-CLIENT-KEY")
+        NexmoClient.start(applicationId: "NEXMO-APPLICATION-ID", sharedSecretKey: "NEXMO-SHARED-SECRET-KEY")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         return true
     }
@@ -45,4 +47,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
 }
-

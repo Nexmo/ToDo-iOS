@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 import Parse
+import VerifyIosSdk
 
 class SignupViewController:UIViewController {
     
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
 
+    @IBOutlet weak var phoneNumber: UITextField!
+    
     @IBAction func signupButton(sender: AnyObject) {
         signup()
     }
@@ -24,35 +27,43 @@ class SignupViewController:UIViewController {
         print(PFUser.currentUser()?.username)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "verify") {
+            //Checking identifier is crucial as there might be multiple
+            // segues attached to same view
+            let verifyVC = segue.destinationViewController as! VerifyViewController;
+            verifyVC.phoneNumber = phoneNumber.text
+            verifyVC.userName = userName.text
+            verifyVC.passWord = password.text
+        }
+    }
+    
     func signup() {
-        let user = PFUser()
-        user.username = userName.text
-        user.password = password.text
-        
         let alert = UIAlertView()
         
-        if ( self.password.text!.isEmpty || self.userName.text!.isEmpty) {
+        if (self.phoneNumber.text!.isEmpty || self.password.text!.isEmpty || self.userName.text!.isEmpty) {
             alert.title = "Invalid Credentials"
             alert.message = "Make sure to fill out all the required fields."
             alert.addButtonWithTitle("Back")
             alert.show()
         }
         else {
-            user.signUpInBackgroundWithBlock {
-            (succeeded: Bool, error: NSError?) -> Void in
-                if let error = error {
-                    let errorString = error.userInfo["error"] as? NSString
-                    let alert = UIAlertView()
-                    alert.title = "Sign Up Error"
-                    alert.message = errorString?.capitalizedString
-                    alert.addButtonWithTitle("Back")
-                    alert.show()
-                }
-                else {
-                    self.performSegueWithIdentifier("signedUp", sender:self)
+            let query = PFQuery(className: "_User")
+            query.whereKey("phoneNumber", equalTo: phoneNumber.text!)
+            query.findObjectsInBackgroundWithBlock {
+                (objects: [PFObject]?, error: NSError?) in
+                if error == nil {
+                    if (objects!.count > 0){
+                        alert.title = "Phone Number Error"
+                        alert.message = "This phone number is associated with another account."
+                        alert.addButtonWithTitle("Back")
+                        alert.show()
+                    }
+                    else {
+                        self.performSegueWithIdentifier("verify", sender:self)
+                    }
                 }
             }
         }
     }
 }
-

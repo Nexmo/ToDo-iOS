@@ -27,9 +27,8 @@ class LoginViewController: UIViewController  {
                 self.currentUser  = PFUser.currentUser()
                 print("Success")
                 // Do stuff after successful login
-                self.performSegueWithIdentifier("table", sender:self)
+                self.performSegueWithIdentifier("verifyLogin", sender:self)
             } else {
-                // The login failed. Check error to see why.
                 let alert = UIAlertView()
                 alert.title = "Login Error"
                 alert.message = "Please re-enter your credentials or sign up below."
@@ -46,10 +45,10 @@ class LoginViewController: UIViewController  {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "table") {
+        if (segue.identifier == "verifyLogin") {
             //Checking identifier is crucial as there might be multiple
             // segues attached to same view
-            let loggedInVC = segue.destinationViewController as! TableViewController;
+            let loggedInVC = segue.destinationViewController as! VerifyLoginViewController;
             loggedInVC.currentUser = self.currentUser
         }
     }

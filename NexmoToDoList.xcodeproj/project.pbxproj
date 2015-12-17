@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2A5C2A1BBDA223003B7B4C /* nexmo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A5C291BBDA223003B7B4C /* nexmo.png */; };
+		1F30FFD21BCD85A7009F4990 /* VerifyIosSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30FFCD1BCD858F009F4990 /* VerifyIosSdk.framework */; };
+		1F30FFD31BCD85A7009F4990 /* VerifyIosSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30FFCD1BCD858F009F4990 /* VerifyIosSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F30FFD61BCD85A7009F4990 /* RequestSigning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30FFCF1BCD858F009F4990 /* RequestSigning.framework */; };
+		1F30FFD71BCD85A7009F4990 /* RequestSigning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30FFCF1BCD858F009F4990 /* RequestSigning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F30FFDA1BCD85A7009F4990 /* DeviceProperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30FFD11BCD858F009F4990 /* DeviceProperties.framework */; };
+		1F30FFDB1BCD85A7009F4990 /* DeviceProperties.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30FFD11BCD858F009F4990 /* DeviceProperties.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F7CE7F11BBE3545002EE85D /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CE7F01BBE3545002EE85D /* AddItemViewController.swift */; };
 		1F9148961BBDC74C00FB1470 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F91488A1BBDC74C00FB1470 /* Accounts.framework */; };
 		1F9148971BBDC74C00FB1470 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F91488B1BBDC74C00FB1470 /* AudioToolbox.framework */; };
@@ -21,7 +26,10 @@
 		1F91489F1BBDC74C00FB1470 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9148931BBDC74C00FB1470 /* Social.framework */; };
 		1F9148A11BBDC74C00FB1470 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9148951BBDC74C00FB1470 /* SystemConfiguration.framework */; };
 		1F9148BC1BBDCE9500FB1470 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9148BB1BBDCE9500FB1470 /* TableViewController.swift */; };
+		1F9148BE1BBDCF8100FB1470 /* VerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9148BD1BBDCF8100FB1470 /* VerifyViewController.swift */; };
 		1F9148C01BBDD04E00FB1470 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9148BF1BBDD04E00FB1470 /* SignupViewController.swift */; };
+		1F9B245E1C17F71C00E1A7B3 /* VerifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B245D1C17F71C00E1A7B3 /* VerifyLoginViewController.swift */; };
+		1FA1467D1C0D8F3700863DED /* nexmo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA1467C1C0D8F3700863DED /* nexmo.png */; };
 		1FB98C4C1BC0F2C900B65E46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB98C4B1BC0F2C900B65E46 /* LoginViewController.swift */; };
 		1FB98C4F1BC0F2D900B65E46 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB98C4D1BC0F2D900B65E46 /* Bolts.framework */; };
 		1FB98C501BC0F2D900B65E46 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB98C4E1BC0F2D900B65E46 /* Parse.framework */; };
@@ -32,6 +40,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F30FFCC1BCD858F009F4990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2ABA3AB91B6166A800EB4842;
+			remoteInfo = VerifyIosSdk;
+		};
+		1F30FFCE1BCD858F009F4990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A6B60761B67A04B005378E0;
+			remoteInfo = RequestSigning;
+		};
+		1F30FFD01BCD858F009F4990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A6B60981B67A078005378E0;
+			remoteInfo = DeviceProperties;
+		};
+		1F30FFD41BCD85A7009F4990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2ABA3AB81B6166A800EB4842;
+			remoteInfo = VerifyIosSdk;
+		};
+		1F30FFD81BCD85A7009F4990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A6B60751B67A04B005378E0;
+			remoteInfo = RequestSigning;
+		};
+		1F30FFDC1BCD85A7009F4990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A6B60971B67A078005378E0;
+			remoteInfo = DeviceProperties;
+		};
 		1FE47AB61BBD9CDD009C961B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FE47A991BBD9CDD009C961B /* Project object */;
@@ -48,6 +98,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1F30FFD71BCD85A7009F4990 /* RequestSigning.framework in Embed Frameworks */,
+				1F30FFD31BCD85A7009F4990 /* VerifyIosSdk.framework in Embed Frameworks */,
+				1F30FFDB1BCD85A7009F4990 /* DeviceProperties.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +108,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1F2A5C291BBDA223003B7B4C /* nexmo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nexmo.png; sourceTree = "<group>"; };
+		1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VerifyIosSdk.xcodeproj; path = "verify-ios-sdk/VerifyIosSdk.xcodeproj"; sourceTree = "<group>"; };
 		1F7CE7F01BBE3545002EE85D /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		1F91488A1BBDC74C00FB1470 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1F91488B1BBDC74C00FB1470 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -69,7 +122,10 @@
 		1F9148931BBDC74C00FB1470 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1F9148951BBDC74C00FB1470 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1F9148BB1BBDCE9500FB1470 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1F9148BD1BBDCF8100FB1470 /* VerifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyViewController.swift; sourceTree = "<group>"; };
 		1F9148BF1BBDD04E00FB1470 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		1F9B245D1C17F71C00E1A7B3 /* VerifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyLoginViewController.swift; sourceTree = "<group>"; };
+		1FA1467C1C0D8F3700863DED /* nexmo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nexmo.png; sourceTree = "<group>"; };
 		1FB98C4B1BC0F2C900B65E46 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1FB98C4D1BC0F2D900B65E46 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = NexmoToDoList/Bolts.framework; sourceTree = "<group>"; };
 		1FB98C4E1BC0F2D900B65E46 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = NexmoToDoList/Parse.framework; sourceTree = "<group>"; };
@@ -88,13 +144,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F9148961BBDC74C00FB1470 /* Accounts.framework in Frameworks */,
+				1F30FFD61BCD85A7009F4990 /* RequestSigning.framework in Frameworks */,
 				1F9148971BBDC74C00FB1470 /* AudioToolbox.framework in Frameworks */,
+				1F30FFDA1BCD85A7009F4990 /* DeviceProperties.framework in Frameworks */,
 				1F9148981BBDC74C00FB1470 /* CFNetwork.framework in Frameworks */,
 				1F9148991BBDC74C00FB1470 /* CoreGraphics.framework in Frameworks */,
 				1F91489A1BBDC74C00FB1470 /* CoreLocation.framework in Frameworks */,
 				1F91489B1BBDC74C00FB1470 /* libsqlite3.tbd in Frameworks */,
 				1F91489C1BBDC74C00FB1470 /* libz.tbd in Frameworks */,
 				1F91489D1BBDC74C00FB1470 /* QuartzCore.framework in Frameworks */,
+				1F30FFD21BCD85A7009F4990 /* VerifyIosSdk.framework in Frameworks */,
 				1FB98C501BC0F2D900B65E46 /* Parse.framework in Frameworks */,
 				1F91489E1BBDC74C00FB1470 /* Security.framework in Frameworks */,
 				1F91489F1BBDC74C00FB1470 /* Social.framework in Frameworks */,
@@ -113,6 +172,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F30FFC71BCD858F009F4990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F30FFCD1BCD858F009F4990 /* VerifyIosSdk.framework */,
+				1F30FFCF1BCD858F009F4990 /* RequestSigning.framework */,
+				1F30FFD11BCD858F009F4990 /* DeviceProperties.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1F9148851BBDC5E900FB1470 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +208,7 @@
 				1FE47AA31BBD9CDD009C961B /* NexmoToDoList */,
 				1F9148851BBDC5E900FB1470 /* Frameworks */,
 				1FE47AA21BBD9CDD009C961B /* Products */,
+				1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,14 +225,16 @@
 			isa = PBXGroup;
 			children = (
 				1FE47AAB1BBD9CDD009C961B /* Assets.xcassets */,
+				1FA1467C1C0D8F3700863DED /* nexmo.png */,
 				1FE47AA41BBD9CDD009C961B /* AppDelegate.swift */,
 				1F7CE7F01BBE3545002EE85D /* AddItemViewController.swift */,
 				1F9148BF1BBDD04E00FB1470 /* SignupViewController.swift */,
+				1F9148BD1BBDCF8100FB1470 /* VerifyViewController.swift */,
 				1F9148BB1BBDCE9500FB1470 /* TableViewController.swift */,
 				1FB98C4B1BC0F2C900B65E46 /* LoginViewController.swift */,
-				1F2A5C291BBDA223003B7B4C /* nexmo.png */,
 				1FE47AAD1BBD9CDD009C961B /* LaunchScreen.storyboard */,
 				1FE8B2541BC19B4A007C2F68 /* Main.storyboard */,
+				1F9B245D1C17F71C00E1A7B3 /* VerifyLoginViewController.swift */,
 				1FE47AB01BBD9CDD009C961B /* Info.plist */,
 			);
 			path = NexmoToDoList;
@@ -183,6 +255,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F30FFD51BCD85A7009F4990 /* PBXTargetDependency */,
+				1F30FFD91BCD85A7009F4990 /* PBXTargetDependency */,
+				1F30FFDD1BCD85A7009F4990 /* PBXTargetDependency */,
 			);
 			name = NexmoToDoList;
 			productName = NexmoToDoList;
@@ -223,6 +298,9 @@
 							com.apple.InAppPurchase = {
 								enabled = 0;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 					1FE47AB41BBD9CDD009C961B = {
@@ -242,6 +320,12 @@
 			mainGroup = 1FE47A981BBD9CDD009C961B;
 			productRefGroup = 1FE47AA21BBD9CDD009C961B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F30FFC71BCD858F009F4990 /* Products */;
+					ProjectRef = 1F30FFC61BCD858F009F4990 /* VerifyIosSdk.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1FE47AA01BBD9CDD009C961B /* NexmoToDoList */,
@@ -250,6 +334,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1F30FFCD1BCD858F009F4990 /* VerifyIosSdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VerifyIosSdk.framework;
+			remoteRef = 1F30FFCC1BCD858F009F4990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F30FFCF1BCD858F009F4990 /* RequestSigning.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RequestSigning.framework;
+			remoteRef = 1F30FFCE1BCD858F009F4990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F30FFD11BCD858F009F4990 /* DeviceProperties.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DeviceProperties.framework;
+			remoteRef = 1F30FFD01BCD858F009F4990 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1FE47A9F1BBD9CDD009C961B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -257,7 +365,7 @@
 			files = (
 				1FE47AAF1BBD9CDD009C961B /* LaunchScreen.storyboard in Resources */,
 				1FE47AAC1BBD9CDD009C961B /* Assets.xcassets in Resources */,
-				1F2A5C2A1BBDA223003B7B4C /* nexmo.png in Resources */,
+				1FA1467D1C0D8F3700863DED /* nexmo.png in Resources */,
 				1FE8B2561BC19B4A007C2F68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,10 +385,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB98C4C1BC0F2C900B65E46 /* LoginViewController.swift in Sources */,
+				1F9148BE1BBDCF8100FB1470 /* VerifyViewController.swift in Sources */,
 				1F9148C01BBDD04E00FB1470 /* SignupViewController.swift in Sources */,
 				1F9148BC1BBDCE9500FB1470 /* TableViewController.swift in Sources */,
 				1FE47AA51BBD9CDD009C961B /* AppDelegate.swift in Sources */,
 				1F7CE7F11BBE3545002EE85D /* AddItemViewController.swift in Sources */,
+				1F9B245E1C17F71C00E1A7B3 /* VerifyLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +404,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F30FFD51BCD85A7009F4990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VerifyIosSdk;
+			targetProxy = 1F30FFD41BCD85A7009F4990 /* PBXContainerItemProxy */;
+		};
+		1F30FFD91BCD85A7009F4990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RequestSigning;
+			targetProxy = 1F30FFD81BCD85A7009F4990 /* PBXContainerItemProxy */;
+		};
+		1F30FFDD1BCD85A7009F4990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DeviceProperties;
+			targetProxy = 1F30FFDC1BCD85A7009F4990 /* PBXContainerItemProxy */;
+		};
 		1FE47AB71BBD9CDD009C961B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FE47AA01BBD9CDD009C961B /* NexmoToDoList */;
@@ -408,9 +533,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NexmoToDoList",
@@ -422,6 +549,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.siDarthVader.NexmoToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -430,9 +559,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Sidharth Sharma (64VSY32GX9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sidharth Sharma (64VSY32GX9)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NexmoToDoList",
@@ -443,7 +574,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siDarthVader.NexmoToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e55a50c4-12ba-48a8-81c9-5db54e54c7f1";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
