@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "97E586CD73FDF80D2B0980196B59D4D55FD7D215",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "97E586CD73FDF80D2B0980196B59D4D55FD7D215" : 0,
+    "CE087E07D57661612519BF053C6BEF980C143055" : 0,
+    "E72BD63AFF368FB4C348705F93451F3B2733D4B9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA99A341-357D-472D-861A-D74726C29D01",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "97E586CD73FDF80D2B0980196B59D4D55FD7D215" : "ToDo-iOS-master%202\/",
+    "CE087E07D57661612519BF053C6BEF980C143055" : "NexmoToDoList\/verify-ios-sdk\/",
+    "E72BD63AFF368FB4C348705F93451F3B2733D4B9" : "NexmoToDoList\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NexmoToDoList",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NexmoToDoList.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Nexmo\/iOS-ToDo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "97E586CD73FDF80D2B0980196B59D4D55FD7D215"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nexmo\/verify-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CE087E07D57661612519BF053C6BEF980C143055"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Nexmo\/ToDo-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E72BD63AFF368FB4C348705F93451F3B2733D4B9"
+    }
+  ]
+}
